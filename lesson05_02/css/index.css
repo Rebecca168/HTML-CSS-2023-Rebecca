@@ -1,27 +1,31 @@
 body {
     background-color: antiquewhite;
 }
+
+/* the root element */
 #root {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
 }
 
+/* the layout grid */
 #layout {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: auto auto 200px;
+    grid-template-rows: auto auto auto;
     grid-template-areas:
         "header"
         "content"
         "footer";
 }
-
+ /* the header */
 #layout header {
     grid-area: header;
     background-color:white;
 }
 
+/* the content */
 #layout main {
     grid-area: content;
     background-color: bisque;
@@ -71,8 +75,38 @@ header img{
 }
 
 footer ul{
-    margin: 0;
+    margin: 1.5em 2em 0 0;
     padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+footer address{
+    margin-top: 1.5em;
+    text-align: center;
+    font-size: small;
+    color: cyan;
+}
+footer ul a:link{
+    text-decoration: none;
+}
+
+footer ul a:hover{
+    text-decoration: none;
+    color: chartreuse;
+}
+
+footer ul svg, footer ul span{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer ul li{
+    list-style-type: none;
+    padding: 0 1em;
 }
 
 /* Small devices (landscape phones, 576px and up)*/
