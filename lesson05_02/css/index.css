@@ -49,7 +49,6 @@ body {
 }
 
 cards section .card{
-    border: 1px rgba(red, green, blue, alpha) solid;
     box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -76,11 +75,37 @@ cards section .card{
     flex-wrap: nowrap;
     text-align: center;
     justify-content: flex-start;
+    align-items: flex-start;
     padding: 0em 1em;
 }
 
+#cards .cardFooter .view{
+flex: 0 1 auto;
+background-color: aqua;
+padding: 0.5em;
+border-radius: 0.4em 0 0 0.4em;
+}
+#cards .cardFooter .edit{
+    flex: 0 1 auto;
+    background-color: aquamarine;
+    padding: 0.5em;
+    border-radius: 0 0.4em 0.4em 0;
+    }
+
+    #cards .cardFooter a{
+        text-decoration: none;
+        color: blueviolet;
+        border: 1px solid lightblue;
+        font-size: 0.8em;
+    }
+
 #cards .cardFooter span{
+    flex: 0 1 auto;
     margin-left: auto;
+    font-size: small;
+    background-color: rgba(127, 255, 212, 0.296);
+    padding: 0.5em;
+    border-radius:  0.4em ;
 }
 
 hearder h2 {
@@ -115,11 +140,12 @@ footer address {
 
 footer ul a:link {
     text-decoration: none;
+    color: rgb(223, 204, 241);
 }
 
 footer ul a:hover {
     text-decoration: none;
-    color: chartreuse;
+    color: rgb(35, 38, 33);
 }
 
 footer ul svg,
