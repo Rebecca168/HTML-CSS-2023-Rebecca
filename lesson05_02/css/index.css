@@ -94,9 +94,14 @@ border-radius: 0.4em 0 0 0.4em;
 
     #cards .cardFooter a{
         text-decoration: none;
-        color: blueviolet;
+        color: rgb(43, 183, 226);
         border: 1px solid lightblue;
+        background-color: cornsilk;
         font-size: 0.8em;
+    }
+
+    #cards .cardFooter a:hover{
+        color: blueviolet;
     }
 
 #cards .cardFooter span{
