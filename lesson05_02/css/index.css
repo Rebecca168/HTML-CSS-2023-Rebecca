@@ -45,6 +45,7 @@ body {
 #cards section {
     flex: 0 1 100%;
     border: 1px black solid;
+    padding: 2em;
 }
 
 #cards section.s1 {
